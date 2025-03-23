@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,22 +7,501 @@
     <meta name="description" content="your cozy tattoo studio" />
     <meta
       name="keywords"
-      content="tattoo studio Hamburg, custom tattoos, artistic, anime, japanese, asian, professional tattoo artists, ink, body art, tattoo shop Hamburg, hh, moolymae, shiruku tattoo, aniteami"
+      content="tattoo studio Hamburg, custom tattoos, artistic, anime, japanese, asian, professional tattoo artists, ink, body art, tattoo shop Hamburg, hh, moolymae, shiruku tattoo, aniteami, palerain"
     />
     <meta name="author" content="𝐥𝐮𝐚✧𝐢𝐧𝐤" />
     <meta name="robots" content="index, follow" />
     <link rel="stylesheet" href="style.css" />
+    <script src="lightbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
   </head>
-  <body>
-    <div class="background"></div>
-    <div class="image-container"></div>
-    <div class="text">website coming soon</div>
-    <a
-      href="https://www.instagram.com/luaink.hh/"
-      target="_blank"
-      class="instagram"
+
+  <body class="bg-white text-black leading-relaxed">
+    <header class="py-20 text-center">
+      <img alt="lua ink logo" class="mx-auto max-w-xs" src="assets/logo.png" />
+    </header>
+
+    <div class="checker"></div>
+
+    <section id="general1" class="bg-black text-white">
+      <div class="max-w-5xl mx-auto px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="py-8">
+            <img
+              src="assets/images/studio_2.png"
+              alt="Studio Innenraum"
+              class="w-full rounded-lg"
+            />
+          </div>
+          <div>
+            <h2 class="text-2xl mb-4">hallo!</h2>
+            <p>
+              Wir sind <strong>Lua Ink</strong>, früher auch als
+              <strong>Shiruku Tattoo</strong> bekannt, ein Tattoo Studio
+              inmitten des Hamburger Universitätsviertel. Unser Team aus
+              erfahrenen Tattoo-Künstler:innen erschafft individuelle Designs,
+              die deinen persönlichen Stil perfekt widerspiegeln.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="general2" class="bg-black text-white">
+      <div class="max-w-5xl mx-auto px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <p class="mb-4">
+              Als Kund:in erhaltet ihr eine umfassende Beratung, angefangen bei
+              der ersten Skizze bis hin zur Fertigstellung des Tattoos. Unsere
+              Künstler:innen arbeiten mit dir zusammen, um sicherzustellen, dass
+              das Endergebnis immer beeindruckend ist.
+            </p>
+            <p class="mb-4">
+              Mit der zentralen Lage in Hamburg ist ein Besuch bei uns bequem
+              erreichbar für alle, die auf der Suche nach einem einzigartigen
+              Kunstwerk auf der Haut sind.
+            </p>
+            <p class="font-bold">
+              Warte nicht länger - Lass dir dein persönliches Kunstwerk noch
+              heute kreieren!
+            </p>
+          </div>
+          <div class="py-8">
+            <img
+              src="assets/images/studio_1.png"
+              alt="Studio Eingang"
+              class="w-full rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="checker"></div>
+
+    <section id="artists" class="py-16 px-8 bg-white text-black">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-8">unsere artists</h2>
+
+        <!-- Separator -->
+        <div class="flex justify-center items-center my-8">
+          <div class="w-1/5 h-px bg-black"></div>
+          <div class="mx-4 text-xl">✦</div>
+          <div class="w-1/5 h-px bg-black"></div>
+        </div>
+
+        <div id="thuy">
+          <div
+            class="flex flex-col md:flex-row items-center justify-center gap-8 mb-8"
+          >
+            <img
+              src="assets/images/thuy_icon.png"
+              alt="Thuys Avatar"
+              class="w-48 h-48 rounded-full"
+            />
+            <div>
+              <h3 class="text-2xl font-bold">
+                thuy <span class="text-base font-normal">(er/ihn)</span>
+              </h3>
+              <p class="text-sm text-gray-700 mb-2">shiruku.tattoo</p>
+              <p class="mb-4 max-w-xl">
+                hat mehr als 15 Jahre Berufserfahrung und ist ein Profi was
+                Farbtattoos, Realismus und vorallem großflächige Tattoos angeht.
+              </p>
+              <div class="flex gap-2 justify-center md:justify-start">
+                <a
+                  href="https://www.instagram.com/shiruku.tattoo/"
+                  target="_blank"
+                  class="bg-black text-center text-white px-4 py-2 w-30 text-sm hover:bg-white hover:text-black border-black border-2"
+                >
+                  instagram
+                </a>
+                <a
+                  href="mailto:info@shiruku-tattoo.de"
+                  target="_blank"
+                  class="bg-black text-center text-white px-4 py-2 w-30 text-sm hover:bg-white hover:text-black border-black border-2"
+                >
+                  e-mail
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tattoo Gallery -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+            <img
+              src="assets/images/thuy_1.png"
+              alt="Thuy Tattoo 1"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+            <img
+              src="assets/images/thuy_2.png"
+              alt="Thuy Tattoo 2"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+            <img
+              src="assets/images/thuy_3.png"
+              alt="Thuy Tattoo 3"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+            <img
+              src="assets/images/thuy_4.png"
+              alt="Thuy Tattoo 4"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+          </div>
+
+          <!-- Separator -->
+          <div class="flex justify-center items-center mb-16">
+            <div class="w-1/5 h-px bg-black"></div>
+            <div class="mx-4 text-xl">✦</div>
+            <div class="w-1/5 h-px bg-black"></div>
+          </div>
+        </div>
+
+        <div id="maily">
+          <div
+            class="flex flex-col md:flex-row items-center justify-center gap-8 mb-8"
+          >
+            <img
+              src="assets/images/mai_ly_icon.png"
+              alt="Mailys Avatar"
+              class="w-48 h-48 rounded-full"
+            />
+            <div>
+              <h3 class="text-2xl font-bold">
+                mai ly <span class="text-base font-normal">(sie/ihr)</span>
+              </h3>
+              <p class="text-sm text-gray-700 mb-2">moolymae</p>
+              <p class="mb-4 max-w-xl">
+                sticht seit August 2021 illustrative Tattoos inspiriert von
+                Ost-Asiatischer Kunst. Am liebsten tätowiert sie botanische und
+                organische Motive wie Blumen, Pflanzen und Tiere.
+              </p>
+              <div class="flex gap-2 justify-center md:justify-start">
+                <a
+                  href="https://www.instagram.com/moolymae/"
+                  target="_blank"
+                  class="bg-black text-center text-white px-4 py-2 w-30 text-sm hover:bg-white hover:text-black border-black border-2"
+                >
+                  instagram
+                </a>
+                <a
+                  href="mailto:dandimai@yahoo.de"
+                  target="_blank"
+                  class="bg-black text-center text-white px-4 py-2 w-30 text-sm hover:bg-white hover:text-black border-black border-2"
+                >
+                  e-mail
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tattoo Gallery -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+            <img
+              src="assets/images/mai_1.png"
+              alt="Mai Ly Tattoo 1"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+            <img
+              src="assets/images/mai_2.png"
+              alt="Mai Ly Tattoo 2"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+            <img
+              src="assets/images/mai_3.png"
+              alt="Mai Ly Tattoo 3"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+            <img
+              src="assets/images/mai_4.png"
+              alt="Mai Ly Tattoo 4"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+          </div>
+
+          <!-- Separator -->
+          <div class="flex justify-center items-center mb-16">
+            <div class="w-1/5 h-px bg-black"></div>
+            <div class="mx-4 text-xl">✦</div>
+            <div class="w-1/5 h-px bg-black"></div>
+          </div>
+        </div>
+
+        <div id="minh">
+          <div
+            class="flex flex-col md:flex-row items-center justify-center gap-8 mb-8"
+          >
+            <img
+              src="assets/images/minh_icon.png"
+              alt="Minhs Avatar"
+              class="w-48 h-48 rounded-full"
+            />
+            <div>
+              <h3 class="text-2xl font-bold">
+                minh <span class="text-base font-normal">(er/ihn)</span>
+              </h3>
+              <p class="text-sm text-gray-700 mb-2">aniteami.ink</p>
+              <p class="mb-4 max-w-xl">
+                tätowiert seit September 2021 und sticht am liebsten Neotribal,
+                Cybersigilism und minimalistisches Fineline. Sein Stil zeichnet
+                sich durch saubere klare Linien und starke Kontraste aus.
+              </p>
+              <div class="flex gap-2 justify-center md:justify-start">
+                <a
+                  href="https://www.instagram.com/aniteami.ink/"
+                  target="_blank"
+                  class="bg-black text-center text-white px-4 py-2 w-30 text-sm hover:bg-white hover:text-black border-black border-2"
+                >
+                  instagram
+                </a>
+                <a
+                  href="mailto:aniteami@outlook.de"
+                  target="_blank"
+                  class="bg-black text-center text-white px-4 py-2 w-30 text-sm hover:bg-white hover:text-black border-black border-2"
+                >
+                  e-mail
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tattoo Gallery -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+            <img
+              src="assets/images/minh_1.png"
+              alt="Minh Tattoo 1"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+            <img
+              src="assets/images/minh_2.png"
+              alt="Minh Tattoo 2"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+            <img
+              src="assets/images/minh_3.png"
+              alt="Minh Tattoo 3"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+            <img
+              src="assets/images/minh_4.png"
+              alt="Minh Tattoo 4"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+          </div>
+
+          <!-- Separator -->
+          <div class="flex justify-center items-center mb-16">
+            <div class="w-1/5 h-px bg-black"></div>
+            <div class="mx-4 text-xl">✦</div>
+            <div class="w-1/5 h-px bg-black"></div>
+          </div>
+        </div>
+
+        <div id="svenja">
+          <div
+            class="flex flex-col md:flex-row items-center justify-center gap-8 mb-8"
+          >
+            <img
+              src="assets/images/svenja_icon.png"
+              alt="Svenjas Avatar"
+              class="w-48 h-48 rounded-full"
+            />
+            <div>
+              <h3 class="text-2xl font-bold">
+                svenja <span class="text-base font-normal">(sie/ihr)</span>
+              </h3>
+              <p class="text-sm text-gray-700 mb-2">palerain.tattoo</p>
+              <p class="mb-4 max-w-xl">
+                ist seit Oktober 2022 dabei und tätowiert alles rund um Manga,
+                Anime und Gaming. Ihre Tattoos zeichnen sich durch weiche und
+                großflächige Schattierungen aus.
+              </p>
+              <div class="flex gap-2 justify-center md:justify-start">
+                <a
+                  href="https://www.instagram.com/palerain.tattoo/"
+                  target="_blank"
+                  class="bg-black text-center text-white px-4 py-2 w-30 text-sm hover:bg-white hover:text-black border-black border-2"
+                >
+                  instagram
+                </a>
+                <a
+                  href="mailto:palerain.tattoo@gmail.com"
+                  target="_blank"
+                  class="bg-black text-center text-white px-4 py-2 w-30 text-sm hover:bg-white hover:text-black border-black border-2"
+                >
+                  e-mail
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tattoo Gallery -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+            <img
+              src="assets/images/svenja_1.png"
+              alt="Svenja Tattoo 1"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+            <img
+              src="assets/images/svenja_2.png"
+              alt="Svenja Tattoo 2"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+            <img
+              src="assets/images/svenja_3.png"
+              alt="Svenja Tattoo 3"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+            <img
+              src="assets/images/svenja_4.png"
+              alt="Svenja Tattoo 4"
+              class="w-full rounded cursor-pointer hover:opacity-75"
+              tabindex="0"
+              role="button"
+              onclick="openLightbox(this.src)"
+              onclick="openLightbox(this.src)"
+              onkeydown="if(event.key === 'Enter') openLightbox(this.src)"
+            />
+          </div>
+
+          <!-- Separator -->
+          <div class="flex justify-center items-center mb-16">
+            <div class="w-1/5 h-px bg-black"></div>
+            <div class="mx-4 text-xl">✦</div>
+            <div class="w-1/5 h-px bg-black"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center sm:p-4">
+        <div
+          class="border-1 border-black p-4 sm:py-10 sm:px-16 text-sm flex items-center gap-4 text-center"
+        >
+          <span class="material-symbols-outlined"> event_available </span>
+          Für Termine bitte unsere Künster:innen direkt kontaktieren!
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Overlay -->
+    <div
+      id="lightbox"
+      class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50"
+      onclick="closeLightbox()"
     >
-      instagram
-    </a>
+      <img
+        id="lightbox-img"
+        src=""
+        class="max-h-[90vh] max-w-[90vw] rounded-lg shadow-xl"
+      />
+    </div>
+
+    <div class="checker"></div>
+
+    <footer
+      class="bg-black text-white p-12 gap-4 flex flex-col md:flex-row justify-between items-center"
+    >
+      <div class="flex-1">
+        <!-- <div class="text-2xl mb-4">uns findet ihr hier</div> -->
+        <div class="mb-2 flex items-center gap-4">
+          <span class="material-symbols-outlined">home</span>
+          <a
+            href="https://maps.app.goo.gl/ZYNu7V9bMAChHBvh9"
+            target="_blank"
+            class="hover:underline underline-offset-4"
+            >Grindelallee 29, 20146 Hamburg</a
+          >
+        </div>
+        <div class="mb-2 flex items-center gap-4">
+          <span class="material-symbols-outlined">call</span>
+          <a
+            href="tel:04033983494"
+            target="_blank"
+            class="hover:underline underline-offset-4"
+            >040 33983494</a
+          >
+        </div>
+      </div>
+
+      <div class="flex-1 text-center md:text-right">&copy; 2025 lua✧ink</div>
+    </footer>
   </body>
 </html>
